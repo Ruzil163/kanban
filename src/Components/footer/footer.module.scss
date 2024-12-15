@@ -1,0 +1,32 @@
+.footer {
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    padding-left: 21px;
+    background-color: #0067A3;
+    flex-shrink: 0;
+
+    span:last-of-type {
+       margin-left: 24px;
+    }
+    .footer_container {
+        display: flex;
+        column-gap: 36px;
+    }
+    div {
+        padding-right: 19px;
+    }
+    @media (max-width: 414px) {
+        * {
+            font-size: 9.5px;
+        }
+        .footer_container {
+            column-gap: 5px;
+        }
+      }
+      @media (max-width: 320px) {
+            display: none;
+      }
+}

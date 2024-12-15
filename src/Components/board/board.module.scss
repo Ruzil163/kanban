@@ -1,0 +1,31 @@
+.board {
+  display: flex;
+  justify-self: center;
+    >*:not(:first-of-type) {
+        margin-left: 24px;
+    }
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        >*:first-of-type {
+            margin-left: 24px;
+        }
+        row-gap: 24px;
+      }
+      @media (max-width: 414px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 14px;
+      }
+      @media (max-width: 320px) {
+        >*:first-of-type {
+            margin-left: 14px;
+            margin-top: 100px;
+        }
+        >*:not(:first-of-type) {
+            margin-left: 14px;
+        
+      }
+      row-gap: 14px;
+    }
+}

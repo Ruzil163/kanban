@@ -1,0 +1,14 @@
+.button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: n;
+
+    &:hover {
+        background-color: #eaeaea;
+    }
+}
